@@ -5,7 +5,7 @@
 NAME = "ZenPacks.ZenSystems.Juniper"
 VERSION = "1.2"
 AUTHOR = "Jane Curry"
-LICENSE = ""
+LICENSE = "GPLv2"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.ZenSystems']
 PACKAGES = ['ZenPacks', 'ZenPacks.ZenSystems', 'ZenPacks.ZenSystems.Juniper']
 INSTALL_REQUIRES = []
