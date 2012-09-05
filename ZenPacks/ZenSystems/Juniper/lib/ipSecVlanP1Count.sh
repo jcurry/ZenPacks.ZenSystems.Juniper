@@ -21,7 +21,7 @@
 count=0
 if [ $2 == "v3" ] 
 then
-  for i in `/usr/bin/snmpwalk -$2 -l authNoPriv -a $4 -x $5 -A $6 -X $7 -u $8 $1 .1.3.6.1.4.1.2636.3.52.1.1.2.1.6 | cut -f1 -d ' '`
+  for i in `/usr/bin/snmpwalk -$2 -l authPriv -a $4 -x $5 -A $6 -X $7 -u $8 $1 .1.3.6.1.4.1.2636.3.52.1.1.2.1.6 | cut -f1 -d ' '`
   do
     count=$(($count+1))
   done
