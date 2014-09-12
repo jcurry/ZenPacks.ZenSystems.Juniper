@@ -134,7 +134,7 @@ Screenshots
 .. _Latest Package for Python 2.6: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.Juniper/ZenPacks.ZenSystems.Juniper-1.2-py2.6.egg
 
 .. _Older Package for Python 2.7: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.Juniper/ZenPacks.ZenSystems.Juniper-2.0-py2.7.egg
-.. _Latest Package for Python 2.7: https://github.com/jcurry/ZenPacks.ZenSystems.Juniper/blob/4.2/dist/ZenPacks.ZenSystems.Juniper-2.2-py2.7.egg
+.. _Latest Package for Python 2.7: https://github.com/jcurry/ZenPacks.ZenSystems.Juniper/blob/4.2/dist/ZenPacks.ZenSystems.Juniper-2.2-py2.7.egg?raw=true
 
 
 .. |JuniperInfo_firewall| image:: http://github.com/jcurry/ZenPacks.ZenSystems.Juniper/raw/master/screenshots/JuniperInfo_firewall.jpg
