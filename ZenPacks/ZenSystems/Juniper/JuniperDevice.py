@@ -1,7 +1,8 @@
 ##########################################################################
 # Author:               Jane Curry,  jane.curry@skills-1st.co.uk
 # Date:                 February 15th, 2011
-# Revised:
+# Revised:		September 23rd, 2012
+#			Added relation for JuniperSP
 #
 # JuniperDevice object class
 #
@@ -50,6 +51,7 @@ class JuniperDevice(Device):
         ('JuniperIpSecN', ToManyCont(ToOne, 'ZenPacks.ZenSystems.Juniper.JuniperIpSecNAT', 'JuniperDevIpSecN')),
         ('JuniperIpSecP', ToManyCont(ToOne, 'ZenPacks.ZenSystems.Juniper.JuniperIpSecPolicy', 'JuniperDevIpSecP')),
         ('JuniperVl', ToManyCont(ToOne, 'ZenPacks.ZenSystems.Juniper.JuniperVlan', 'JuniperDevVl')),
+        ('JuniperSP', ToManyCont(ToOne, 'ZenPacks.ZenSystems.Juniper.JuniperSPU', 'JuniperDevSP')),
         )
 
     factory_type_information = deepcopy(Device.factory_type_information)

@@ -1140,66 +1140,6 @@ ZC.JuniperRoutingEnginePanel = Ext.extend(ZC.ComponentGridPanel, {
 Ext.reg('JuniperRoutingEnginePanel', ZC.JuniperRoutingEnginePanel);
 ZC.registerName('JuniperRoutingEngine', _t('RoutingEngine'), _t('Routing Engines'));
 
-ZC.JuniperSPUPanel = Ext.extend(ZC.ComponentGridPanel, {
-    constructor: function(config) {
-        config = Ext.applyIf(config||{}, {
-            componentType: 'JuniperSPU',
-            fields: [
-                {name: 'uid'},
-                {name: 'name'},
-                {name: 'severity'},
-                {name: 'status'},
-                {name: 'hasMonitor'},
-                {name: 'monitor'},
-                {name: 'containerIndex'},
-                {name: 'containerDescr'},
-                {name: 'containerParentIndex'},
-                {name: 'containerParentDescr'},
-                {name: 'SPUDescr'},
-                {name: 'SPUCPU'},
-                {name: 'SPUMemory'},
-            ],
-            columns: [{
-                id: 'severity',
-                dataIndex: 'severity',
-                header: _t('Events'),
-                renderer: Zenoss.render.severity,
-                width: 50,
-            },{
-                id: 'SPUDescr',
-                dataIndex: 'SPUDescr',
-                header: _t('Description'),
-                width: 200,
-                sortable: true,
-            },{
-/*
-                id: 'SPUCPU',
-                dataIndex: 'SPUCPU',
-                header: _t('CPU %'),
-                width: 60,
-                sortable: true,
-            },{
-                id: 'SPUMemory',
-                dataIndex: 'SPUMemory',
-                header: _t('Memory (% used)'),
-                width: 70,
-                sortable: true,
-            },{
-*/
-                id: 'name',
-                dataIndex: 'name',
-                header: _t('Object Name'),
-                width: 200,
-                sortable: true,
-            }]
-        });
-        ZC.JuniperSPUPanel.superclass.constructor.call(this, config);
-    }
-});
-
-Ext.reg('JuniperSPUPanel', ZC.JuniperSPUPanel);
-ZC.registerName('JuniperSPU', _t('SPU'), _t('SPUs'));
-
 ZC.JuniperBGPPanel = Ext.extend(ZC.ComponentGridPanel, {
     constructor: function(config) {
         config = Ext.applyIf(config||{}, {

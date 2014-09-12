@@ -45,6 +45,11 @@
                  provides=".interfaces.IJuniperRoutingEngineInfo"
                  />
 
+        <adapter factory=".info.JuniperSPUInfo"
+                for=".JuniperSPU.JuniperSPU"
+                 provides=".interfaces.IJuniperSPUInfo"
+                 />
+
         <adapter factory=".info.JuniperBGPInfo"
                 for=".JuniperBGP.JuniperBGP"
                  provides=".interfaces.IJuniperBGPInfo"

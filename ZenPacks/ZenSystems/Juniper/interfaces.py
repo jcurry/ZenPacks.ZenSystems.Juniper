@@ -185,6 +185,18 @@ Info adapter for JuniperRoutingEngine component
     RoutingEngineState = schema.Text(title=u"State", readonly=True, group='Details')
     RoutingEngineUpTime = schema.Text(title=u"Up Time", readonly=True, group='Details')
 
+class IJuniperSPUInfo(IComponentInfo):
+    """
+Info adapter for JuniperSPU component
+"""
+    containerIndex = schema.Int(title=u"Container Index", readonly=True, group='Details')
+    containerDescr = schema.Text(title=u"Container Description", readonly=True, group='Details')
+    containerParentIndex = schema.Int(title=u"Parent Index", readonly=True, group='Details')
+    containerParentDescr = schema.Text(title=u"Parent Description", readonly=True, group='Details')
+    SPUDescr = schema.Text(title=u"Description", readonly=True, group='Details')
+    SPUCPU = schema.Int(title=u"CPU Util", readonly=True, group='Details')
+    SPUMemory = schema.Int(title=u"Memory", readonly=True, group='Details')
+
 class IJuniperBGPInfo(IComponentInfo):
     """
 Info adapter for JuniperBGP component

@@ -185,6 +185,17 @@ class JuniperRoutingEngineInfo(ComponentInfo):
     RoutingEngineUpTime = ProxyProperty("RoutingEngineUpTime")
     RoutingEngineMemory = ProxyProperty("RoutingEngineMemory")
 
+class JuniperSPUInfo(ComponentInfo):
+    implements(interfaces.IJuniperSPUInfo)
+
+    containerIndex = ProxyProperty("containerIndex")
+    containerDescr = ProxyProperty("containerDescr")
+    containerParentIndex = ProxyProperty("containerParentIndex")
+    containerParentDescr = ProxyProperty("containerParentDescr")
+    SPUDescr = ProxyProperty("SPUDescr")
+    SPUCPU = ProxyProperty("SPUCPU")
+    SPUMemory = ProxyProperty("SPUMemory")
+
 class JuniperBGPInfo(ComponentInfo):
     implements(interfaces.IJuniperBGPInfo)
 

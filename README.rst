@@ -30,6 +30,8 @@ devices (this is controlled by the modeler plugins selected):
         * JuniperPowerSupply
         * JuniperFPC (Flexible PIC Concentrator)  which has details for:
             * Parent container, description, serial number, chassis information, CPU, memory, up time 
+        * JuniperSPU (Service Processing Unit)  which has details for:
+            * Parent container, description, serial number, chassis information, CPU, memory, up time 
         * JuniperPIC (Physical Interface Card) and JuniperMIC (Modular Interface Card) which have details for:
             * Parent container, description, serial number, chassis information, CPU, memory, up time
             * The relationship between FPC and their contained MICs and PICs can be seen 
@@ -59,7 +61,7 @@ directly with the different components detailed above
 Requirements & Dependencies
 ===========================
 
-    * Zenoss Versions Supported: 3.0
+    * Zenoss Versions Supported: 3.x and 4.x
     * External Dependencies: The relevant Juniper MIBs need to be available on target devices
     * ZenPack Dependencies:
     * Installation Notes: zenhub and zopectl restart after installing this ZenPack.
@@ -71,6 +73,7 @@ Download the appropriate package for your Zenoss version from the list
 below.
 
 * Zenoss 3.0+ `Latest Package for Python 2.6`_
+* Zenoss 4.0+ `Latest Package for Python 2.7`_
 
 Installation
 ============
@@ -110,6 +113,12 @@ Change History
    * Some updates for extra debug
 * 1.2
    * Transferred to new github methods
+* 2.0
+   * Tested for Zenoss Core 4.2
+   * Scripts for command templates in lib directory support SNMP v3
+* 2.2
+   * Added support for Service Processing Unit (SPU) components
+   * Moved shellscripts for ipSec templates from lib to libexec to preserve permission bits
 
 Screenshots
 ===========
@@ -121,7 +130,10 @@ Screenshots
 
 .. External References Below. Nothing Below This Line Should Be Rendered
 
-.. _Latest Package for Python 2.6: https://github.com/jcurry/ZenPacks.ZenSystems.Juniper/blob/master/dist/ZenPacks.ZenSystems.Juniper-1.2-py2.6.egg?raw=true
+.. _Latest Package for Python 2.6: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.Juniper/ZenPacks.ZenSystems.Juniper-1.2-py2.6.egg
+
+.. _Latest Package for Python 2.7: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.Juniper/ZenPacks.ZenSystems.Juniper-2.0-py2.7.egg
+
 
 .. |JuniperInfo_firewall| image:: http://github.com/jcurry/ZenPacks.ZenSystems.Juniper/raw/master/screenshots/JuniperInfo_firewall.jpg
 .. |Juniper_router_bgp| image:: http://github.com/jcurry/ZenPacks.ZenSystems.Juniper/raw/master/screenshots/Juniper_router_bgp.jpg
