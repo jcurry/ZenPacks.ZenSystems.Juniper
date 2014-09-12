@@ -73,7 +73,8 @@ Download the appropriate package for your Zenoss version from the list
 below.
 
 * Zenoss 3.0+ `Latest Package for Python 2.6`_
-* Zenoss 4.0+ `Latest Package for Python 2.7`_
+* Zenoss 4.0+ `Older Package for Python 2.7`_
+* Zenoss 4.2+ `Latest Package for Python 2.7`_
 
 Installation
 ============
@@ -132,7 +133,8 @@ Screenshots
 
 .. _Latest Package for Python 2.6: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.Juniper/ZenPacks.ZenSystems.Juniper-1.2-py2.6.egg
 
-.. _Latest Package for Python 2.7: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.Juniper/ZenPacks.ZenSystems.Juniper-2.0-py2.7.egg
+.. _Older Package for Python 2.7: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.Juniper/ZenPacks.ZenSystems.Juniper-2.0-py2.7.egg
+.. _Latest Package for Python 2.7: https://github.com/jcurry/ZenPacks.ZenSystems.Juniper/blob/4.2/dist/ZenPacks.ZenSystems.Juniper-2.2-py2.7.egg
 
 
 .. |JuniperInfo_firewall| image:: http://github.com/jcurry/ZenPacks.ZenSystems.Juniper/raw/master/screenshots/JuniperInfo_firewall.jpg
